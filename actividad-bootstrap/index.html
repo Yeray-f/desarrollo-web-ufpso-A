@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+    <!-- Boostra CDN -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- CSS propio -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg bg-info-subtle">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Pagina Web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/suzuki-hayabusa-2021-1-1612605710.jpg?crop=0.588xw:1.00xh;0.0335xw,0&resize=1200:*"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Suzuki Hayabusa</h5>
+                        <p class="card-text">La Suzuki Hayabusa 1300 (GSX1300R) es una icónica motocicleta deportiva de
+                            alto rendimiento conocida por su velocidad extrema y diseño aerodinámico, bautizada como
+                            "halcón peregrino"</p>
+                        <a href="#" class="btn btn-primary">Añadir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="https://www.apex66.co.uk/wp-content/uploads/2025/08/Suzuki-GSXR-750-10.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Suzuki GSX-R 750 K7</h5>
+                        <p class="card-text">La Suzuki GSX-R 750 K7 (modelo 2007) es una motocicleta superdeportiva
+                            legendaria, reconocida por equilibrar la agilidad de una 600cc con la potencia de una 1000cc
+                        </p>
+                        <a href="#" class="btn btn-primary">Añadir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/suzuki-hayabusa-2021-1-1612605710.jpg?crop=0.588xw:1.00xh;0.0335xw,0&resize=1200:*"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Suzuki Hayabusa</h5>
+                        <p class="card-text">La Suzuki Hayabusa 1300 (GSX1300R) es una icónica motocicleta deportiva de
+                            alto rendimiento conocida por su velocidad extrema y diseño aerodinámico, bautizada como
+                            "halcón peregrino"</p>
+                        <a href="#" class="btn btn-primary">Añadir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FORMULARIO-->
+
+    <div class="roow mt-5 mb-5" id="login">
+        <div class="col-6 mx auto">
+            <h3 class="text-center">Iniciar sección</h3>
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo</label>
+                    <input type="email" class="email" id="email" aria-describedby="emailHelp">
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+            <div id="mesage" class="mt-3 text-center"></div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- VENTANA MODAL-->
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Información</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Las motos en Colombia son principalmente vehículos de bajo/mediano cilindraje (100-200cc) usados
+                    para trabajo y transporte urbano por estratos 1, 2 y 3, representando la opción de movilidad más
+                    popular tras caminar
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
